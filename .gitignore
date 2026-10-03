@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Legacy archived implementation
+legacy/
+
+# Test/cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+logs/
+*.log
+
+# Runtime database
+data/lasermaker.db
+*.db-journal
+*.sqlite-journal
+
+# Runtime locks
+*.lock
+data/*.lock
+
+# Secrets / local environment
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+*.png

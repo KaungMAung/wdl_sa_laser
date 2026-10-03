@@ -1,0 +1,24 @@
+database:
+  server: "SGQASQL01"
+  database: "workflow-u-woodlands-sg-new"
+  driver: "ODBC Driver 17 for SQL Server"
+  authentication: "windows"
+  trust_server_certificate: true
+  connection_timeout: 5
+  connection_check_interval_seconds: 60
+
+plc:
+  ip: "192.168.1.10"
+  poll_interval_seconds: 2
+  connection_check_interval_seconds: 60
+  status_mapping:
+    "0": "READY"
+    "1": "RUNNING"
+    "2": "PROCESSED"
+    "3": "PART FAILED"
+    "5": "NO PART"
+
+  result_mapping:
+    "0": "NONE"
+    "1": "PASS"
+   

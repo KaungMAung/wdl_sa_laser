@@ -1,0 +1,398 @@
+* {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #17212b;
+}
+
+QWidget#appRoot {
+    background: #eef2f5;
+}
+
+QFrame#header {
+    background: #17212b;
+    border: none;
+}
+
+QLabel#brandLogo {
+    background: #ffffff;
+    color: #e30613;
+    font-size: 42px;
+    font-weight: 900;
+    border-radius: 4px;
+}
+
+QLabel#appTitle {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+QLabel#appSubtitle {
+    color: #9eabb7;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+QLabel#clockLabel {
+    color: #d7dee5;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+QLabel#connectionStatus {
+    background: #24313d;
+    border: 1px solid #445362;
+    border-radius: 15px;
+    padding: 7px 14px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+QLabel#connectionStatus[tone="connecting"] { color: #f4bd45; }
+QLabel#connectionStatus[tone="connected"] { color: #6ee7a0; }
+QLabel#connectionStatus[tone="disconnected"] { color: #ff777e; }
+
+QFrame#contentCard, QFrame#lotSection {
+    background: #ffffff;
+    border: 1px solid #d8e0e7;
+    border-radius: 7px;
+}
+
+QScrollArea#lotScrollArea, QScrollArea#lotScrollArea QWidget#qt_scrollarea_viewport,
+QWidget#lotContainer {
+    background: transparent;
+    border: none;
+}
+
+QTabWidget#lotTabs::pane {
+    background: transparent;
+    border: none;
+    top: -1px;
+}
+
+QTabWidget#lotTabs QTabBar::tab {
+    background: #dfe6ec;
+    color: #526272;
+    border: 1px solid #c7d1da;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    min-width: 122px;
+    min-height: 38px;
+    padding: 2px 14px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+QTabWidget#lotTabs QTabBar::tab:selected {
+    background: #1683d8;
+    color: #ffffff;
+    border-color: #1683d8;
+}
+
+QTabWidget#lotTabs QTabBar::tab:hover:!selected {
+    background: #edf3f7;
+    color: #155f96;
+}
+
+QLabel#sectionTitle {
+    color: #253444;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+QLabel#fieldLabel {
+    color: #586777;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+QLabel#lotTrayLabel {
+    color: #1683d8;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+QLabel#plcTargetLabel {
+    color: #526272;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 0 6px;
+}
+
+QPushButton#loadDataButton {
+    color: #ffffff;
+    background: #1683d8;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+QPushButton#loadDataButton:hover {
+    background: #116fb8;
+}
+
+QPushButton#loadDataButton:disabled {
+    color: #9ca7b1;
+    background: #dde3e8;
+}
+
+QLabel#dataLoadStatus {
+    color: #667584;
+    background: #e2e7eb;
+    border: 1px solid #ccd5dc;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+QLabel#dataLoadStatus[tone="loading"] {
+    color: #805b0b;
+    background: #fff3cd;
+    border-color: #e5bd58;
+}
+
+QLabel#dataLoadStatus[tone="loaded"] {
+    color: #166534;
+    background: #dcfce7;
+    border-color: #72d69a;
+}
+
+QLabel#dataLoadStatus[tone="error"] {
+    color: #991b1b;
+    background: #fee2e2;
+    border-color: #ef9297;
+}
+
+QLabel#dataSourceStatus, QLabel#plcUpdateStatus {
+    color: #526272;
+    background: #eef2f5;
+    border: 1px solid #ccd5dc;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 9px;
+    font-weight: 800;
+}
+
+QLineEdit#scannerInput, QLineEdit#serialInput {
+    background: #f9fbfc;
+    border: 2px solid #cbd5df;
+    border-radius: 5px;
+    padding: 4px 12px;
+    font-size: 20px;
+    font-weight: 600;
+    selection-background-color: #1683d8;
+}
+
+QLineEdit#serialInput {
+    font-size: 23px;
+    border-color: #8eb9dc;
+}
+
+QLineEdit#scannerInput:focus, QLineEdit#serialInput:focus {
+    border-color: #1683d8;
+    background: #ffffff;
+}
+
+QLineEdit[scanError="true"] {
+    border-color: #dc2626;
+    background: #fff1f2;
+}
+
+QLineEdit:disabled {
+    background: #e8edf1;
+    border-color: #d2d9df;
+    color: #82909d;
+}
+
+QFrame#separator {
+    color: #dfe5ea;
+    max-height: 1px;
+}
+
+QLabel#databaseValue {
+    color: #17212b;
+    background: #f3f6f8;
+    border-left: 4px solid #1683d8;
+    border-radius: 3px;
+    padding: 6px 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+QLabel#scanCounter {
+    color: #1683d8;
+    font-size: 42px;
+    font-weight: 800;
+    min-width: 155px;
+}
+
+QLabel#lotCounter {
+    color: #1683d8;
+    font-size: 28px;
+    font-weight: 800;
+    min-width: 105px;
+}
+
+QLabel#lotCounter[tone="success"] {
+    color: #159447;
+}
+
+QLabel#lotCounter[tone="warning"] {
+    color: #d18a00;
+}
+
+QLabel#scanCounter[tone="success"] {
+    color: #159447;
+}
+
+QLabel#scanCounter[tone="warning"] {
+    color: #d18a00;
+}
+
+QLabel#completionLabel {
+    color: #788693;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+QLabel#completionLabel[tone="success"] {
+    color: #159447;
+    font-size: 15px;
+}
+
+QLabel#completionLabel[tone="warning"] {
+    color: #b87500;
+}
+
+QLabel#completionLabel[tone="error"] {
+    color: #c72c35;
+}
+
+QTableWidget#serialTable {
+    background: #ffffff;
+    border: 1px solid #d8e0e7;
+    border-radius: 4px;
+    color: #334252;
+    font-size: 12px;
+    gridline-color: transparent;
+}
+
+QTableWidget#serialTable QHeaderView::section {
+    background: #e9eef2;
+    color: #405162;
+    border: none;
+    border-right: 1px solid #d1dae1;
+    border-bottom: 1px solid #ccd6de;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+QFrame#controlArea {
+    background: #ffffff;
+    border-top: 1px solid #d8e0e7;
+}
+
+QPushButton#clearLotButton, QPushButton#clearRecipeButton {
+    color: #ffffff;
+    background: #49677f;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+QPushButton#clearLotButton:hover, QPushButton#clearRecipeButton:hover {
+    background: #3b566c;
+}
+
+QPushButton#clearRecipeButton {
+    background: #334e65;
+    margin-left: 8px;
+}
+
+QPushButton#clearLotButton:disabled, QPushButton#clearRecipeButton:disabled {
+    color: #9ca7b1;
+    background: #dde3e8;
+}
+
+QFrame#statusArea {
+    background: #23313e;
+    border-top: 1px solid #101820;
+}
+
+QLabel#statusTitle {
+    color: #94a4b3;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    min-width: 132px;
+}
+
+QLabel#statusMessage {
+    color: #ffffff;
+    background: #344452;
+    border-left: 5px solid #8a98a5;
+    border-radius: 3px;
+    padding: 7px 14px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+QLabel#statusMessage[tone="success"] {
+    background: #194b31;
+    border-left-color: #45cf7b;
+}
+
+QLabel#statusMessage[tone="error"] {
+    background: #62292d;
+    border-left-color: #f0525b;
+}
+
+QLabel#statusMessage[tone="warning"] {
+    background: #604b1f;
+    border-left-color: #f2b832;
+}
+
+QLabel#statusMessage[tone="active"] {
+    background: #164c72;
+    border-left-color: #36a7f3;
+}
+
+QMessageBox { background: #f3f6f8; }
+
+QTabWidget#mainNavigation::pane { border: none; }
+QTabBar#mainNavigation QTabBar::tab { padding: 10px 28px; font-size: 14px; font-weight: 700; }
+QFrame#recipeCard { background: #ffffff; border: 1px solid #d8e0e7; border-radius: 5px; }
+QLabel#recipeMessage { color: #166534; font-weight: 700; }
+QPushButton#logoutButton { color: #ffffff; background: #b52f38; border: none; border-radius: 4px; padding: 8px 12px; font-weight: 800; }
+QPushButton#logoutButton:hover { background: #92252d; }
+QLabel#loggedInUser { color: #dbe7ef; font-size: 12px; font-weight: 800; padding: 4px 8px; }
+QFrame#recipeSummaryCard {
+    background: #ffffff;
+    border: 2px solid #8eb9dc;
+    border-radius: 7px;
+}
+
+QLabel#recipeSummaryTitle {
+    color: #526272;
+    border: none;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+QLabel#recipeSummaryValue {
+    color: #0875bd;
+    border: none;
+    font-size: 30px;
+    font-weight: 900;
+}
+QPushButton#primaryButton { background: #1683d8; color: white; font-weight: 800; padding: 8px 18px; }
